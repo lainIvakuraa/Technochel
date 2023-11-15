@@ -1,16 +1,23 @@
-import React from 'react'
+import React from 'react';
+import { useState } from 'react';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col'
 import classes from './Navbar.module.css';
 import Position from '../../static/img/Position.png';
 import Tachka from '../../static/img/Tachka.png';
 import Profile from '../../static/img/Profile.png';
 import Logo from '../../static/img/logo.png';
 import Form from 'react-bootstrap/Form';
-import Button from 'react-bootstrap/Button'
+import Button from 'react-bootstrap/Button';
+import Navbutton from '../../static/img/navbutton.png'
+import InputGroup from 'react-bootstrap/InputGroup';
 let Navbar = function() {
+
+    const [isNavExpanded, setIsNavExpanded] = useState(false)
+
     return (
-        
+        <div className={classes.navbar}>
         <div className={classes.nav}>
             <Container>
             <Row>
@@ -30,17 +37,17 @@ let Navbar = function() {
                     <a className={classes.catalogPageLink} href="#">Каталог</a>
                 </div>
                 <div className={classes.Search}>
-                <Form className="d-flex">
-                    <Form.Control
-                        type="search"
-                        placeholder="Search"
-                        className="me-2"
-                        aria-label="Search"
-                    />
-                    <Button>
+                <InputGroup className="mb-3">
+                        <Form.Control
+                        placeholder="search"
+                        aria-label="search"
+                        aria-describedby="basic-addon2"
+                        />
+                        <Button variant="secondary" color='blue' id="button-addon2">
                         Search
-                    </Button>
-                </Form>
+                        </Button>
+                    </InputGroup>
+                
                 </div>
                 <div className={classes.accountContainer}>
                     <div className={classes.cart}>
@@ -52,9 +59,50 @@ let Navbar = function() {
                     <a href='#'>Профиль</a>
                     </div>
                 </div>
+                <a className={classes.hamburger}
+                    onClick={() => {
+                        setIsNavExpanded(!isNavExpanded);
+                      }}
+                >
+                    <img src={Navbutton} className={classes.navbutton} alt="Navbutton" />
+                </a>
             </div>
             </Row>
         </Container>
+        </div>
+        
+        <div className={
+            isNavExpanded ? classes.navmobile: classes.navmobileHidden}>
+            <Row>
+                <Col>
+                <div className={classes.mobileNavContainer}>
+                <a className={classes.mobileNavLink}>Техночел</a>
+                </div>
+                </Col>
+            </Row>
+            <Row>
+                <Col>
+                <div className={classes.mobileNavContainer}>
+                <a className={classes.mobileNavLink}>Каталог</a>
+                </div>
+                </Col>
+            </Row>
+            <Row>
+                <Col>
+                <div className={classes.mobileNavContainer}>
+                <a className={classes.mobileNavLink}>Корзина</a>
+                </div>
+                </Col>
+            </Row>
+            <Row>
+                <Col>
+                <div className={classes.mobileNavContainer}>
+                <a className={classes.mobileNavLink}>Профиль</a>
+                </div>
+                </Col>
+            </Row>
+        </div>
+        <p>hovno</p>
         </div>
     );
         
