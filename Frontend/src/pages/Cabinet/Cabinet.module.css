@@ -1,0 +1,36 @@
+.Container {
+    margin: 10px auto 0px ;
+}
+
+.Down {
+    margin-top: 10px;
+}
+
+.Upper {
+    margin-bottom: 50px;
+}
+
+.Price {
+    text-align: right;
+}
+
+.Date {
+    text-align: right;
+}
+
+.CountPrice {
+    text-align: right;
+}
+
+.Item {
+    margin-left: 70px;
+}
+
+.Link {
+    margin-left: 60px;
+    color: #507EF4;
+}
+
+.Column {
+    margin-bottom: 30px;
+}
