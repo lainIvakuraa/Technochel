@@ -9,7 +9,7 @@ const Cabinet = () => {
                 <Row>
                 <Col md='4'>
                     <div className = {classes.Column}>
-                        <Card style={{ height: '40rem'}}>
+                        <Card style={{}}>
                             <Card.Body className = {classes.ColumnName}>
                                 <Card.Text className = {classes.TextColumn}>
                                     Главная
@@ -69,12 +69,14 @@ const Cabinet = () => {
                         <div className = {classes.Down}>
                         <Card>
                             <Card.Body className = {classes.BodyDown}>
+                                
                                 <Card.Img variant="left" src= {Xiaomi} alt = "noctua"/>
                                 <div className = {classes.Item}>
                                 <Card.Text className = {classes.Item}>
                                     6.43" Смартфон Xiaomi Redmi Note 11 128 ГБ серый
                                 </Card.Text>
                                 </div>
+                                
                                 <div className = {classes.Price}>
                                     <Card.Text className = {classes.Price}>
                                         Цена: 999 ₽

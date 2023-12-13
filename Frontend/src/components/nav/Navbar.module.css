@@ -64,8 +64,7 @@
     transition:0.5;
 }
 .Search {
-    width:600px;
-    padding-top:20px;
+    padding-top:15px;
 }
 .cart {
     display:flex;
@@ -119,6 +118,9 @@
   }
 @media screen and (max-width: 768px) {
     .technoChel {
+        display:none;
+    }
+    .column1Container {
         display:none;
     }
     .accountContainer {

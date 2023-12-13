@@ -1,0 +1,43 @@
+h1 {
+    font-weight:bold;
+}
+.product {
+    margin-top:20px;
+}
+.productTitle {
+    background-color: white;
+    box-shadow: 3px 4px 6px 0px rgba(0, 0, 0, 0.10);
+    border-radius: 30px;
+    padding:10px;
+    margin-bottom:10px;
+}
+.orders {
+    background-color: white;
+    box-shadow: 3px 4px 6px 0px rgba(0, 0, 0, 0.10);
+    border-radius: 30px;
+    padding:10px;
+}
+.productSpecifications {
+    background-color: white;
+    box-shadow: 3px 4px 6px 0px rgba(0, 0, 0, 0.10);
+    border-radius: 30px;
+    padding:10px;
+}
+.productSpecifications h1 {
+    margin-left:30px;
+    padding:20px;
+}
+.specification {
+    margin-bottom:30px;
+}
+.specificationName {
+    padding-left:30%;
+}
+.productInfo {
+    display:flex;
+    flex-direction: column;
+}
+.productPrice {
+    display:flex;
+    justify-content: space-between;
+}

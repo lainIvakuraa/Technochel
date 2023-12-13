@@ -22,6 +22,7 @@ let Navbar = function() {
         <div className={classes.nav}>
             <Container>
             <Row>
+                
             <div className={classes.navUpper}>
                 <div className={classes.navUpperLeft}>
                     <div className={classes.position}><img src={Position} alt="position" /></div>
@@ -30,6 +31,7 @@ let Navbar = function() {
                 <div className={classes.navUpperRight}>8 800 555-35-35 (с 8:00 до 0:00)</div>
             </div>
             <div className={classes.navContent}>
+                <Col md='4' className="d-none d-md-block d-lg-block">
                 <div className={classes.technoChel}>
                     <Link to="/" className={classes.mainPageLink} href='#'>
                     <div className={classes.logoImage}><img src={Logo} alt="Logo" /></div>
@@ -37,6 +39,8 @@ let Navbar = function() {
                         </Link>
                     <Link to="categories" className={classes.catalogPageLink} href="#">Каталог</Link>
                 </div>
+                </Col>
+                <Col md='6' s='10'>
                 <div className={classes.Search}>
                 <InputGroup className="mb-3">
                         <Form.Control
@@ -50,6 +54,8 @@ let Navbar = function() {
                     </InputGroup>
                 
                 </div>
+                </Col>
+                <Col md='2' className="d-none d-md-block d-lg-block">
                 <div className={classes.accountContainer}>
                     <div className={classes.cart}>
                     <Link to="cart">
@@ -64,6 +70,7 @@ let Navbar = function() {
                         </Link>
                     </div>
                 </div>
+                </Col>
                 <a className={classes.hamburger}
                     onClick={() => {
                         setIsNavExpanded(!isNavExpanded);
