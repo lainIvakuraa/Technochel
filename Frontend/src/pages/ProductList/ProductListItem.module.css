@@ -1,0 +1,26 @@
+* {
+    box-sizing:border-box;
+}
+.ProductListItem {
+    background-color: white;
+    box-shadow: 3px 4px 6px 0px rgba(0, 0, 0, 0.10);
+    border-radius: 30px;
+    margin: 10px 0;
+}
+.imageDiv {
+    display:flex;
+    justify-content: center;
+}
+.buttonDiv {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap:10px;
+}
+@media screen and (max-width: 768px) {
+    .ProductListItem {
+        padding:10px 0;
+    }
+}

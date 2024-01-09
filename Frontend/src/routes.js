@@ -2,6 +2,8 @@ import Home from "./pages/Home/Home";
 import Categories from "./pages/Categories/Categories";
 import RegistrationForm from "./pages/RegistrationForm/RegistrationForm";
 import Cabinet from "./pages/Cabinet/Cabinet"
+import Product from './pages/Home/Product'
+import ProductList from './pages/ProductList/ProductList'
 
 export const authRouts = [
     {
@@ -17,7 +19,7 @@ export const authRouts = [
 export const publicRouts = [
     {
         path: '/',
-        Component: <Home/>
+        Component: <ProductList/>
     },
     {
         path: '/categories',
