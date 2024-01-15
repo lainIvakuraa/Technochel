@@ -24,3 +24,6 @@
         padding:10px 0;
     }
 }
+.itemTitle {
+    text-decoration: none;
+}

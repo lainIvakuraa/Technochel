@@ -37,7 +37,7 @@ let Navbar = function() {
                     <div className={classes.logoImage}><img src={Logo} alt="Logo" /></div>
                         Техночел
                         </Link>
-                    <Link to="categories" className={classes.catalogPageLink} href="#">Каталог</Link>
+                    <Link to="catalog" className={classes.catalogPageLink} href="#">Каталог</Link>
                 </div>
                 </Col>
                 <Col md='6' s='10'>
@@ -64,7 +64,7 @@ let Navbar = function() {
                         </Link>
                     </div>
                     <div className={classes.account}>
-                    <Link to="profile">
+                    <Link to="sign-up">
                             <div className={classes.profileImage}><img src={Profile} alt="Profile" /></div>
                             Профиль
                         </Link>

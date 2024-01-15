@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import {Container, Col, Row, Form, Button} from 'react-bootstrap';
 import classes from './Registration.module.css'
+import { Link } from 'react-router-dom';
 const RegistrationForm = () => {
     const [phoneNumber, setPhoneNumber] = useState('');
     const [email, setEmail] = useState('');
@@ -56,9 +57,11 @@ const RegistrationForm = () => {
                                         <Form.Control className = {classes.COntrolPassword} type="password" placeholder="Пароль"/>
                                     </Form.Group>
                                     <div className = {classes.ButtonContainer}>
+                                        <Link to="/profile" relative="path" style={{ textDecoration: "none" }}>
                                         <Button className = {classes.Button} variant="primary" type="submit">
                                             Готово
                                         </Button>
+                                        </Link>
                                     </div>
                                 </Form>
                             </div>

@@ -1,0 +1,284 @@
+
+@layer components {
+  .all-\[unset\] {
+    all: unset;
+  }
+}
+
+
+
+.container {
+  width: 1300px;
+}
+
+@media  screen and (max-width: 1300px) {
+  .container {
+    width: 978px;
+  }
+}
+
+
+@media  screen and (max-width: 768px) {
+  .container {
+    width: 100vw;
+    padding: 0 10px 0 10px;
+  }
+}
+
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif !important;
+  box-sizing: border-box;
+}
+
+.App {
+  background: #EAEAEA;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+
+.garant_service {
+  height: calc(100% - 58px);
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.main_sidebar {
+  width: 199px;
+  height: 521px;
+  flex-shrink: 0;
+  border-radius: 14px;
+  background: #FFF;
+}
+
+.sidebar_second {
+  width: 200px;
+  height: 1258px;
+  flex-shrink: 0;
+  border-radius: 14px;
+  background: #CBF035;
+}
+
+.sidebar_second p {
+  color: #000;
+
+  font-family: Inter;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.block_garant {
+  width: 881px;
+  height: 339px;
+  background-color: white;
+  border-radius: 20px;
+}
+
+.block_garant_first {
+  width: 50%;
+  height: 100%;
+}
+
+.block_garant_first .title {
+  padding-top: 13px;
+  color: #000;
+  font-family: Inter;
+  font-size: 23px;
+  font-style: normal;
+  font-weight: 400;
+  padding-bottom: 17px;
+  line-height: normal;
+  border-bottom: 1px solid #AFCABD;
+  border-right: 1px solid #AFCABD;
+}
+
+.garant_ul {
+  border-right: 1px solid #AFCABD;
+  height: 300px;
+  overflow-y: scroll;
+  
+}
+
+.garant_ul::-webkit-scrollbar {
+  display: none;
+}
+
+.title_garant {
+  color: #000;
+  font-family: Inter;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.garant_button button {
+  background-color: #FFCC17;
+  width: 100%;
+  height: 62px;
+  flex-shrink: 0;
+  border-end-start-radius: 20px;
+  color: #000;
+  font-family: Inter;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.block_garant_second {
+  width: 50%;
+}
+
+.block_garant_second__title {
+  display: flex;
+  padding: 16px;
+  color: #000;
+  font-family: Inter;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: -0.4px;
+  width: 100%;
+  border-bottom: 1px solid #AFCABD;
+
+
+}
+
+.block_garant_second ul li {
+  list-style: inside !important;
+
+  display: flex;
+}
+
+.block_garant_second a {
+  color: #507EF4;
+
+  font-family: Inter;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: -0.4px;
+}
+
+.block_garant_second button {
+  margin-top: 56.4px;
+  width: 100%;
+  height: 62px;
+  background: #A1EE8E;
+  border-bottom-right-radius: 20px;
+  color: #000;
+
+  font-family: Inter;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.title_relative_products {
+  color: #000;
+  font-family: Inter;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  padding-bottom: 12px;
+  padding-top: 16px;
+}
+
+.footer {
+  background: #605F5F;
+  color: #FFF;
+  font-family: Inter;
+  font-size: 100px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  padding-bottom: 20px;
+}
+
+
+@media  screen and (max-width: 1300px) {
+  .block_garant {
+    width: 767px;
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  .sidebar_second {
+    width: 100%;
+    height: 80px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  .main_sidebar {
+    height: 50px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .title_relative_products {
+    font-size: 24px;
+  }
+}
+
+@media  screen and (max-width: 768px) {
+  .garant_button button, .block_garant_second button   {
+    font-size: 20px;
+  }
+  .block_garant {
+    width: 100vw;
+    flex-direction: column;
+    height: auto;
+  }
+  .block_garant_first , .block_garant_second  {
+    width: 100%;
+  }
+  .garant_button button, .block_garant_second button {
+    border-radius: 0;
+  }
+  .sidebar_second p {
+    font-size: 20px;
+  }
+}

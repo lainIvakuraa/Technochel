@@ -1,0 +1,113 @@
+.cart_product_block {
+    width: 100%;
+    height: 161px;
+    border-radius: 8px;
+    background: #FFF;
+}
+
+.cart_product_image img {
+    width: 136px;
+    height: 121px;
+}
+
+.cart_product_image {
+    padding: 20px;
+}
+
+.cart_product_title p {
+    margin-bottom: 48px;
+    margin-top: 24px;
+    color: #000;
+    font-family: Inter;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.cart_product_title a {
+    display: block;
+    color: #507EF4;
+    font-family: Inter;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: -0.44px;
+}
+
+.cart_product_price {
+    margin-right: 24px;
+}
+
+.price {
+    flex-shrink: 0;
+    color: #000;
+    font-family: Inter;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 400;
+    margin-top: 24px;
+    line-height: normal;
+    margin-bottom: 6px;
+    display: flex;
+    justify-content: end;
+    margin-right: 14px;
+}
+
+.count_price {
+    color: #767676;
+    font-family: Inter;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: -0.36px;
+    display: flex;
+    justify-content: end;
+    margin-right: 14px;
+}
+
+.cart_product_button {
+    width: 248px;
+    height: 43px;
+    margin-top: 17px;
+    flex-shrink: 0;
+    border-radius: 11px;
+    background: #F2B720;
+}
+
+
+@media  screen and (max-width: 978px) {
+
+    .cart_product_title p {
+        margin-bottom: 20px;
+    }
+
+    .cart_product_block {
+        height: auto;
+        display: block;
+    }
+    .cart_product_button  {
+        width: 100%;
+        border-radius: 0;
+        height: 46px;
+    }
+    .cart_product_price {
+        margin-right: 0;
+    }
+    .price, .count_price {
+        justify-content: start;
+        margin-left: 20px;
+    }
+}
+
+
+@media  screen and (max-width: 768px) { 
+    .cart_product_image img {
+        height: auto;
+    }
+    .cart_product_title p {
+        font-size: 18px;
+    }
+}
